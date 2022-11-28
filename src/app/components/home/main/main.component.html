@@ -1,0 +1,138 @@
+<!-- <app-sidebar></app-sidebar> -->
+<app-notification></app-notification>
+<section class="home-page" [ngStyle]="{ 'background-image': 'url(' + profileInfo?.Wallpaper + ')'}">
+    <div class="context-menu-wrapper">
+        <div class="content">
+            <ul class="menu">
+                <li (click)="openDialog(context.name,'btns permession', context.name, context.icon ? null : 'https://lh3.googleusercontent.com/hY60u5DV3GEpY7ybMKykauvX49mLWeEG4L2Lb16qvFjAO6e5Pc-AI46bNDmfaHjf2CwFZQzPriI2qhSkrI8=w80-h40' )"
+                    class="item" *ngFor="let context of rightClickMenuContext">
+                    <img width="35px"
+                        src="{{context.icon ? null : 'https://lh3.googleusercontent.com/hY60u5DV3GEpY7ybMKykauvX49mLWeEG4L2Lb16qvFjAO6e5Pc-AI46bNDmfaHjf2CwFZQzPriI2qhSkrI8=w80-h40'}}"
+                        alt="">
+                    <span>{{context?.title}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="home-content">
+            <!-- Start Desktop Links -->
+            <ul class="list-unstyled m-0 p-0" id="list">
+                <li *ngFor="let icon of desktopIcons"
+                    (click)="openDialog(icon?.Name, icon.Button, icon?.Title, icon?.icon ? null : 'https://lh3.googleusercontent.com/hY60u5DV3GEpY7ybMKykauvX49mLWeEG4L2Lb16qvFjAO6e5Pc-AI46bNDmfaHjf2CwFZQzPriI2qhSkrI8=w80-h40')">
+                    <a>
+                        <div class="folder-content">
+                            <div class="icon">
+                                <img src="{{icon?.IconPath}}">
+                            </div>
+                            <div class="folder-name">
+                                <span>
+                                    {{icon?.Title}}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li
+                (click)="openDialog('Widget', 'icon.Button',' icon?.Title', 'icon?.icon')">
+                <a>
+                    <div class="folder-content">
+                        <div class="icon">
+                            <img src="https://lh3.googleusercontent.com/hY60u5DV3GEpY7ybMKykauvX49mLWeEG4L2Lb16qvFjAO6e5Pc-AI46bNDmfaHjf2CwFZQzPriI2qhSkrI8=w80-h40">
+                        </div>
+                        <div class="folder-name">
+                            <span>
+                                Widget
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li
+            (click)="openDialog('Friends', 'icon.Button',' icon?.Title', 'icon?.icon')">
+            <a>
+                <div class="folder-content">
+                    <div class="icon">
+                        <img src="https://lh3.googleusercontent.com/hY60u5DV3GEpY7ybMKykauvX49mLWeEG4L2Lb16qvFjAO6e5Pc-AI46bNDmfaHjf2CwFZQzPriI2qhSkrI8=w80-h40">
+                    </div>
+                    <div class="folder-name">
+                        <span>
+                            Friends
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+                <!-- <li (click)="showCodeModal()">
+                    <a>
+                        <div class="folder-content">
+                            <div class="icon">
+                                <img
+                                    src="https://lh3.googleusercontent.com/hY60u5DV3GEpY7ybMKykauvX49mLWeEG4L2Lb16qvFjAO6e5Pc-AI46bNDmfaHjf2CwFZQzPriI2qhSkrI8=w80-h40">
+                            </div>
+                            <div class="folder-name">
+                                <span>
+                                    Watch stream
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li> -->
+                <li *ngFor="let icon of desktopGroups" (click)='openGroup(icon?.details)'>
+                    <a>
+                        <div class="folder-content">
+                            <div class="icon">
+                                <img src="{{icon?.Icon}}">
+                            </div>
+                            <div class="folder-name">
+                                <span>
+                                    {{icon?.Name}}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</section>
+<!-- Start Taskbar Section -->
+<app-taskbar></app-taskbar>
+
+<!-- <nz-modal [(nzVisible)]="isCodeModalVisable" nzTitle="Connect to a stream" (nzOnCancel)="handleCodeModalCancel()"
+    (nzOnOk)="connectWithPeer()">
+    <ng-container *nzModalContent>
+        <form [formGroup]='streamForm'>
+            <div class="form-group">
+                <label class="form-control">
+                    PeerId: {{peerId}}
+                </label>
+            </div>
+        </form>
+    </ng-container>
+</nz-modal> -->
+
+<!-- <nz-modal [(nzVisible)]="isStreamModalVisble" nzTitle="Connect to a stream" (nzOnCancel)="handleStreamModalCancel()"
+    (nzOnOk)="handleStreamModalOk()">
+    <ng-container *nzModalContent>
+        <div>
+            <label class="form-control">
+                PeerId: {{peerId}}
+            </label>
+            <div style="width: 400px; height: 300px; border: 2px solid" id="remote-video">
+            </div>
+            <input type="text" placeholder="Peer Id" [(ngModel)]='peerIdShare' />
+
+        </div>
+        <div id="remote-container">
+        </div>
+
+        <div id="local-container">
+        </div>
+    </ng-container>
+</nz-modal> -->

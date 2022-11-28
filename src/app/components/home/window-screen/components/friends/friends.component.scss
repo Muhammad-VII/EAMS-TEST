@@ -1,0 +1,193 @@
+.model {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  max-width: 525px;
+  width: 100%;
+  height: 520px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+overflow: hidden;
+  transition:
+  top .5s 0s cubic-bezier(.1, 1.2, .3, 1),
+  transform .5s 0s cubic-bezier(.1, 1.2, .3, 1),
+  width .5s .5s cubic-bezier(.1, 1.2, .3, 1),
+  opacity .3s;
+  border-radius: 8px;
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f4f4f4;
+      box-shadow: 0px 0px 6px #00000029;
+      padding: 5px 10px;
+      cursor: move;
+      h5 {
+          button {
+              all: unset;
+              cursor: pointer;
+          }
+          margin: 0;
+          font-size: 20px;
+          font-family: 'arial-regular';
+      }
+      .add-report-actions {
+          display: flex;
+          align-items: center;
+          button {
+              all: unset;
+              cursor: pointer;
+              margin: 0 7px;
+              font-size: 16px;
+              color: #4D4F5C;
+              display: flex;
+              align-items: center;
+              img {
+                  width: 18px;
+              }
+              span {
+                  margin: 0 3px;
+              }
+          }
+      }
+      .modal-actions {
+          button {
+              all: unset;
+              cursor: pointer;
+          }
+      }
+  }
+  .nav {
+    background-color: #F8F8F8;
+    border-radius:  0 0 8px 8px;
+    overflow: hidden;
+    justify-content: space-between;
+    li {
+      min-width: 30%;
+      button {
+        width: 100%;
+        padding: 15px 10px;
+        border-radius: 0;
+        color: #1B1B25;
+        &.active {
+          background-color: #60C094;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .content {
+      padding: 20px;
+      .friends-list {
+        display: flex;
+        align-items: center;
+        border-bottom: 0.5px solid #D5D5D5;
+        padding: 20px 0;
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+        .firend-img {
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+          }
+        }
+        .friend-info {
+          h5 {
+            color: #1B1B25;
+            margin: 0;
+            font-size: 16px;
+            time {
+              color: #676767;
+            }
+          }
+          h6 {
+            color: #676767;
+            margin: 0;
+            font-size: 14px;
+          }
+          ul {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            li {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+  }
+}
+
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+  padding-left: 0;
+}
+
+::ng-deep .mat-dialog-container {
+  background-color: transparent;
+  padding: 0 !important;
+  color: #000;
+}
+::ng-deep .mat-dialog-content {
+  max-height: 483px;
+}
+
+// Table Style 
+::ng-deep .mat-elevation-z8 {
+  box-shadow: none;
+}
+::ng-deep thead {
+  background: #f8f8fc !important;
+}
+tr.mat-row, tr.mat-footer-row {
+  transition: all .3s;
+  &:hover {
+      background: #f8f8fc !important;
+  }
+}
+::ng-deep .mat-paginator-outer-container {
+  background-color: #fff;
+}
+.mat-paginator, 
+.mat-paginator-page-size 
+.mat-select-trigger {
+  color: #0000008a;
+}
+::ng-deep .mat-select-value {
+  color: #0000008a;
+}
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: #0000006b;
+}
+::ng-deep .mat-select-arrow {
+  color: #0000008a;
+}
+::ng-deep .mat-icon-button.mat-button-disabled.mat-button-disabled {
+  color: #00000042;
+}
+::ng-deep th.mat-header-cell:first-of-type {
+  width: 80px;
+}
+::ng-deep th.mat-header-cell:nth-of-type(2),
+::ng-deep th.mat-header-cell:nth-of-type(3) {
+  width: 50px;
+}
+
+.moreActionsMenuItem{
+  transition: background-color .3s;
+}
+
+.moreActionsMenuItem:hover {
+  background-color: #E9E9ED;
+}
+// Table Style 
+
+::ng-deep .mat-menu-panel {
+  border-radius: 6px !important;
+}

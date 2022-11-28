@@ -1,0 +1,91 @@
+<section cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" (click)='focus($event)' id="Banks">
+    <header cdkDragHandle class="w-100 d-flex justify-content-end">
+      <img src="assets/home/window/icons/close-blue.svg" width="28px" alt="" srcset=""
+        style="cursor: pointer;" (click)="closeDialog()">
+    </header>
+    <mat-dialog-content class="mat-typography p-0 m-0">
+      <div class="content">
+        <div style="width: 85%; margin: auto;">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="">
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <img src="assets/home/window/icons/PlaceholderCountry.svg" alt="" width="99px" height="99px">
+                  </div>
+                  <div>
+                    <div class="user-data-container">
+                      <label for="countryName">Country name: </label>
+                      <p id="countryName">Egypt</p>
+                    </div>
+  
+                    <div class="user-data-container">
+                      <label for="Currency">Currency: </label>
+                      <p id="Currency">Pound EGP</p>
+                    </div>
+  
+                    <div class="user-data-container">
+                      <label for="CountryKey">Country key: </label>
+                      <p id="CountryKey">EGY</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class=" user-data-container">
+                    <label for="Area">Area: </label>
+                    <p id="Area">1248237598 KM</p>
+                  </div>
+  
+                  <div class="user-data-container">
+                    <label for="latLong">Lat long: </label>
+                    <p id="latLong">30,04350, 4835763</p>
+                  </div>
+  
+                  <div class="user-data-container">
+                    <label for="createdIn">Created In: </label>
+                    <p id="createdIn">13 May 2020 13:10:05</p>
+                  </div>
+  
+                  <div class="user-data-container">
+                    <label for="updatedIn">Updated In: </label>
+                    <p id="updatedIn">17 May 2020 15:04:03</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class=" user-data-container">
+                <label for="Nationality">Nationality: </label>
+                <p id="Nationality">Egyptian</p>
+              </div>
+  
+              <div class="user-data-container">
+                <label for="status">Status: </label>
+                <p id="status">Active</p>
+              </div>
+  
+              <div class="user-data-container">
+                <label for="GMT">GMT: </label>
+                <p id="GMT"> +02:00</p>
+              </div>
+  
+              <div class=" user-data-container">
+                <label for="Capital">Capital: </label>
+                <p id="Capital">Cairo</p>
+              </div>
+  
+              <div class="user-data-container">
+                <label for="createdBy">Created by </label>
+                <p id="createdBy">Lorem ipsum</p>
+              </div>
+  
+              <div class="user-data-container">
+                <label for="updatedBy">Updated by: </label>
+                <p id="updatedBy">Lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-dialog-content>
+  </section>

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "emoji-eams"
+  },
+  "targets": {
+    "emoji-eams": {
+      "hosting": {
+        "EAMS": [
+          "emoji-eams"
+        ]
+      }
+    }
+  }
+}

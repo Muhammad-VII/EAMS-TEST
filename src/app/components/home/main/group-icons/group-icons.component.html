@@ -1,0 +1,16 @@
+<ul>
+  <li *ngFor="let icon of data" (click)="openDialog(icon?.name, icon.Button, icon?.Title, icon?.icon ? null : 'https://lh3.googleusercontent.com/hY60u5DV3GEpY7ybMKykauvX49mLWeEG4L2Lb16qvFjAO6e5Pc-AI46bNDmfaHjf2CwFZQzPriI2qhSkrI8=w80-h40')">
+    <a>
+      <div class="folder-content">
+        <div class="icon">
+          <img src="{{icon?.Icon}}">
+        </div>
+        <div class="folder-name">
+          <span>
+            {{icon?.Title}}
+          </span>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>

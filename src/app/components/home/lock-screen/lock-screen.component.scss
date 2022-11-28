@@ -1,0 +1,56 @@
+.lock-screen-page {
+    background: url('/assets/shared/main-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .lock-screen-content {
+        text-align: start;
+        .row {
+            min-height: 100vh;
+        }
+        .main-info {
+            border-radius: 15px;
+            padding: 25px;
+            .user-img {
+                img {
+                    max-width: 150px;
+                    border-radius: 50%;
+                }
+                h3 {
+                    color: #FFFFFF;
+                    font-size: 30px;
+                    font-family: 'arial-bold';
+                    margin: 20px 0;
+                }
+            }
+            .user-pass {
+                .form-group {
+                    position: relative;
+                    input {
+                        border-radius: 0;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 2px solid white;
+                        color: #fff;
+                        padding-right: 55px;
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                    button {
+                        position: absolute;
+                        top: -5px;
+                        right: 0;
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        z-index: 99;
+                    }
+                    ::placeholder {
+                        color: #94acb7;
+                    }
+                }
+            }
+        }
+    }
+}

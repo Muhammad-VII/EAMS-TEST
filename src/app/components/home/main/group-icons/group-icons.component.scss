@@ -1,0 +1,47 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+  padding-top: 10px;
+  margin-bottom: 0;
+  list-style: none;
+  li {
+    width: 85px;
+    height: 85px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 3px;
+    a {
+      border-radius: 3px;
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #73c6ea7e;
+      }
+      .folder-content {
+        img {
+          max-width: 100%;
+          transition: all 0.3s;
+          width: 35px;
+          height: 35px;
+          margin-bottom: 5px;
+        }
+        .folder-name {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #fff;
+          span {
+            font-family: "arial-regular";
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

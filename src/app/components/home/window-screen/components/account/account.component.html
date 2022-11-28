@@ -1,0 +1,128 @@
+<section click-stop-propagation cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" id="Account" (click)="focus($event)">
+  <header cdkDragHandle>
+      <div class="title">
+          <h5>
+              <!-- <button>
+                  <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+              </button> -->
+              <img class="mx-2" src="assets/images/user.png" width="20px" alt="" srcset="">
+              <!-- <img class="mx-2" [src]="data[0].IconPath" width="20px" alt="" srcset=""> -->
+              <!-- <span>{{data[0].Name}}</span> -->
+              <span>Account</span>
+          </h5>
+      </div>
+      <div class="modal-actions">
+          <button class="mx-2" id="minimize" (click)="minimize($event)">
+              <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="">
+          </button>
+          <button (click)="close($event)" id="maximize">
+              <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="">
+          </button>
+      </div>
+  </header>
+    <mat-dialog-content class="mat-typography p-0 m-0">
+        <div class="content">
+            <!-- <h3>Hello From {{data[0].Name}} Window</h3> -->
+            <form>
+                <div class="mb-2">
+                    <div class="title-profile">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="icon-upload mb-3">
+                                    <div class="upload">
+                                        <img class="rounded-circle preview" width="100px" height="100px"
+                                            src="assets/home/window/icons/icon-default.png" alt="" srcset="">
+                                        <!-- <button> -->
+                                        <div>
+                                            <label style="cursor: pointer;" for="upload-img"><img id="previwe-img"
+                                                    src="assets/home/window/icons/upload.png"
+                                                    alt="upload_image_skelton"></label>
+                                            <input (change)='onFileSelected($event)' type="file" id="upload-img"
+                                                style="display: none; visibility: none;">
+                                        </div>
+                                        <!-- </button> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div>
+                                    <label class="form-label m-0">First Name</label>
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="Add your Name here">
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <label class="form-label m-0">Last Name</label>
+                                    <div class="">
+                                        <input type="text" class="form-control" placeholder="Add your Name here">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Language</option>
+                                <option value="1">1</option>
+                                <option value="1">1</option>
+                                <option value="1">1</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="change-password">
+                    <div class="sec-title">
+                        <h4>Change password</h4>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your password">
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your password">
+                    </div>
+                </div>
+                <div class="choose-bg">
+                    <div class="sec-title">
+                        <h4>Change background</h4>
+                    </div>
+                    <div class="content-sec">
+                        <img src="/assets/images/background1.png" alt="" srcset="">
+                        <img src="/assets/images/background2.png" alt="" srcset="">
+                        <button>
+                            <img src="/assets/images/add-bg.png" alt="" srcset="">
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-3">
+                    <div class="col-md-12 mb-4 d-flex align-items-center justify-content-between flex-column">
+                        <div class="w-100">
+                            <div class="form-check form-switch">
+                                <nz-switch [(ngModel)]="switchValue"></nz-switch>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Receive Notifications</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-4 d-flex align-items-center justify-content-between flex-column">
+                        <div class="w-100">
+                            <div class="form-check form-switch">
+                                <nz-switch [(ngModel)]="switchValue"></nz-switch>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Dark mode</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="mb-2">
+                        <div class="fom-actions">
+                            <button (click)="close()">Cancel</button>
+                            <button>Save</button>
+                        </div>
+                    </div>    
+                </div>
+                
+            </form>
+        </div>
+    </mat-dialog-content>
+</section>

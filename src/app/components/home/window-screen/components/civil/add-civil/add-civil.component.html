@@ -1,0 +1,92 @@
+<section cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" id="ADD" (click)="focus($event)">
+    <header cdkDragHandle>
+        <div class="title">
+            <h5>
+                <button>
+                    <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+                </button>
+                <img class="mx-2" src="assets/home/window/icons/Add State.svg" width="20px" alt="" srcset="">
+                <span>Add State</span>
+            </h5>
+        </div>
+        <div class="modal-actions">
+            <button class="mx-2" id="minimize" (click)="minimize($event)">
+                <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="">
+            </button>
+            <button (click)="close()" id="maximize">
+                <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="">
+            </button>
+        </div>
+    </header>
+    <mat-dialog-content class="mat-typography p-0 m-0">
+        <div class="content">
+            <form>
+                <div class="mb-2 w-100">
+                    <label for="Name" class="form-label">Name</label>
+                    <div class="d-flex">
+                        <input id="Name" type="text" placeholder="Add Name Here" class="form-control">
+                        <img class="ms-2" src="assets/home/window/icons/language.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mb-2 w-100">
+                    <label for="Police" class="form-label">Police Station</label>
+                    <div class="d-flex">
+                        <select class="form-select" id="Police" type="text">
+                            <option value="0">Add police staion</option>
+                            <option value="1">AL Nozha</option>
+                        </select>
+                        <img class="ms-2" src="assets/home/window/icons/language.png" alt="lang_select">
+                    </div>
+                </div>
+
+                <div class="mb-2 w-100">
+                    <label for="Country" class="form-label">Country</label>
+                    <div class="d-flex">
+                        <select class="form-select" id="Country" type="text">
+                            <option value="0">Select country</option>
+                            <option value="1">Egypt</option>
+                        </select>
+                        <img class="ms-2" src="assets/home/window/icons/vuesax-bold-add.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mb-2 w-100">
+                    <label for="state" class="form-label">State</label>
+                    <div class="d-flex">
+                        <select class="form-select" id="state" type="text">
+                            <option value="0">Select State</option>
+                            <option value="1">Cairo</option>
+                        </select>
+                        <img class="ms-2" src="assets/home/window/icons/vuesax-bold-add.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mb-2 w-100">
+                    <label for="city" class="form-label">City</label>
+                    <div class="d-flex">
+                        <select class="form-select" id="city" type="text">
+                            <option value="0">Select City</option>
+                            <option value="1">Sheraton</option>
+                        </select>
+                        <img class="ms-2" src="assets/home/window/icons/vuesax-bold-add.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="my-4 w-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <label for="state" class="form-check-label">Status</label>
+                        <nz-switch [(ngModel)]="switchValue"></nz-switch>
+                    </div>
+                </div>
+                
+                <div class="mb-2 w-100">
+                    <div class="fom-actions">
+                        <button (click)="close()">Cancel</button>
+                        <button type="submit">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </mat-dialog-content>
+</section>

@@ -1,0 +1,133 @@
+<section cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" id="ADD" (click)="focus($event)">
+    <header cdkDragHandle>
+        <div class="title">
+            <h5>
+                <button>
+                    <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+                </button>
+                <img class="mx-2" src="assets/home/window/icons/addCountryScreenLogo.svg" width="20px" alt="" srcset="">
+                <span>Add Country</span>
+            </h5>
+        </div>
+        <div class="modal-actions">
+            <button class="mx-2" id="minimize" (click)="minimize($event)">
+                <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="">
+            </button>
+            <button (click)="close()" id="maximize">
+                <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="">
+            </button>
+        </div>
+    </header>
+    <mat-dialog-content class="mat-typography p-0 m-0">
+        <div class="content">
+            <form>
+                <div class="mb-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="icon-upload mb-3">
+                                <div class="upload">
+                                    <img class="rounded-circle preview" width="100px" height="100px"
+                                        src="assets/home/window/icons/icon-default.png" alt="" srcset="">
+                                    <!-- <button> -->
+                                    <div>
+                                        <label style="cursor: pointer;" for="upload-img"><img id="previwe-img"
+                                                src="assets/home/window/icons/upload.png"
+                                                alt="upload_image_skelton"></label>
+                                        <input (change)='onFileSelected($event)' type="file" id="upload-img"
+                                            style="display: none; visibility: none;">
+                                    </div>
+                                    <!-- </button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div>
+                                <label class="form-label m-0">Country name</label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" placeholder="Egypt">
+                                    <img src="assets/home/window/icons/language.png"
+                                class="ms-2" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <label class="form-label m-0">Nationality</label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" placeholder="Egyptian">
+                                    <img src="assets/home/window/icons/language.png"
+                                class="ms-2" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <label class="form-label">Currency</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control" placeholder="EGP">
+                                <img src="assets/home/window/icons/language.png"
+                                class="ms-2" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">GMT</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>+02:00</option>
+                                <option value="1">model One</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label">Population</label>
+                            <input type="text" class="form-control" placeholder="847936899">
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label">Population</label>
+                            <div class="d-flex">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Please Select capital</option>
+                                    <option value="1">model One</option>
+                                </select>
+                                <img class="ms-2" src="assets/home/window/icons/vuesax-bold-add.svg" alt="" srcset="">          
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <label class="form-label">Country key</label>
+                            <input type="text" class="form-control" placeholder="EGY">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Area (KM)</label>
+                            <input type="text" class="form-control" placeholder="100,000">
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label">Lat long</label>
+                            <input type="text" class="form-control" placeholder="304058, 3565665">
+                        </div>
+
+                        <div>
+                            <br/>
+                            <div class="mb-2 d-flex align-items-center justify-content-between" style="margin-top: 0.9rem;">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Status</label>
+                                <nz-switch [(ngModel)]="switchValue"></nz-switch>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-2">
+                        <div class="fom-actions">
+                            <button (click)="close()">Cancel</button>
+                            <button>Save</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </mat-dialog-content>
+</section>

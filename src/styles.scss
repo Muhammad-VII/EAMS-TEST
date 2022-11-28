@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "arial-regular";
+  src: url("./assets/fonts/arial-regular.ttf");
+}
+
+@font-face {
+  font-family: "arial-bold";
+  src: url("./assets/fonts/arial-bold.ttf");
+}
+
+body {
+  overflow: hidden !important;
+  font-family: "arial-regular" !important;
+}
+
+.foucedDialog {
+  z-index: 0;
+}
+
+.large_Index {
+  z-index: 9999;
+}
+
+.small_Index {
+  z-index: unset;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2DBECD;
+  border-radius: 20px;
+}

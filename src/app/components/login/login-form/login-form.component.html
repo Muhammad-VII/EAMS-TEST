@@ -1,0 +1,58 @@
+<section class="login-page">
+    <div class="container">
+        <div class="login-content">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 col-md-7 col-sm-10 my-4">
+                    <div class="login-form" [formGroup]="loginForm">
+                        <div class="form-header">
+                            <div class="logo text-center">
+                                <img src="assets/shared/logo.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                        <form class="form-content" [formGroup]="loginForm" (ngSubmit)="signIn(loginForm)">
+                            <div class="example-container">
+                                <mat-form-field class="example-form-field w-100" appearance="fill">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput type="email" formControlName="Email">
+                                    <button *ngIf="Email" matSuffix mat-icon-button aria-label="Clear" (click)="Email=''">
+                                        <mat-icon>close</mat-icon>
+                                    </button>
+                                </mat-form-field>
+                                 <mat-form-field class="w-100" appearance="fill">
+                                    <mat-label>Password</mat-label>
+                                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="Password">
+                                    <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    </button>
+                                </mat-form-field> 
+                                 <span class="text-muted" *ngIf="!loginForm.controls['Password'].valid && loginForm.controls['Password']?.touched">Please Enter Your Password</span>
+                                 <div class="form-more d-flex align-items-center justify-content-between flex-wrap">
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                        <label class="custom-control-label mx-2" for="customControlAutosizing">Remember Me</label>
+                                    </div>
+                                    <div class="forget-password mb-2">
+                                        <a href="/">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <div class="login-btn my-4 text-center">
+                                    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+                                </div>
+                                <div class="help">
+                                    <p>
+                                        <strong>
+                                            Need help?
+                                        </strong>
+                                        <a (click)="ticketSupport()">
+                                            Ticket Support
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,378 @@
+<section click-stop-propagation cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" (click)='focus($event)' id="GetUsers">
+  <header cdkDragHandle>
+    <div class="title">
+      <h5>
+        <button>
+          <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+        </button>
+        <img class="mx-2" src="assets/images/list.png" width="20px" alt="" srcset="">
+        <span>Friends List</span>
+      </h5>
+    </div>
+    <div class="add-report-actions">
+      <button (click)="openAddDialog()" *ngFor="let button of buttonsAvalible[0]">
+        <img src="assets/home/window/icons/add.png">
+        <span>{{button?.Name}}</span>
+      </button>
+    </div>
+    <div class="modal-actions">
+      <button class="mx-2" (click)='minimize($event)' id="minimize">
+        <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="">
+      </button>
+      <button (click)="closeDialog($event)" id="maximize">
+        <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="">
+      </button>
+    </div>
+  </header>
+  <mat-dialog-content class="mat-typography p-0 m-0">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Friends</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Requests</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">My Requests</button>
+      </li>
+    </ul>
+    <div class="content">
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info mx-3">
+              <h5>Mohamed Akmal</h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/email.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/sms.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/message.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/notification.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/share.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/delete.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info mx-3">
+              <h5>Mohamed Akmal</h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/email.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/sms.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/message.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/notification.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/share.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/delete.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info mx-3">
+              <h5>Mohamed Akmal</h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/email.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/sms.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/message.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/notification.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/share.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/delete.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info mx-3">
+              <h5>Mohamed Akmal</h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/email.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/sms.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/message.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/notification.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/share.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/delete.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info w-100 mx-3">
+              <h5 class="d-flex justify-content-between w-100">
+                Mohamed Akmal
+                <time>28-Aug-2022</time>
+              </h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled mt-2">
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/true.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/false.svg" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info w-100 mx-3">
+              <h5 class="d-flex justify-content-between w-100">
+                Mohamed Akmal
+                <time>28-Aug-2022</time>
+              </h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled mt-2">
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/true.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/false.svg" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info w-100 mx-3">
+              <h5 class="d-flex justify-content-between w-100">
+                Mohamed Akmal
+                <time>28-Aug-2022</time>
+              </h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled mt-2">
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/true.svg" alt="" srcset="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/false.svg" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info w-100 mx-3">
+              <h5 class="d-flex justify-content-between w-100">
+                Mohamed Akmal
+                <time>28-Aug-2022</time>
+              </h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled mt-2">
+                <!-- <li>
+                  <a href="">
+                    <img src="/assets/icons/true.svg" alt="" srcset="">
+                  </a>
+                </li> -->
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/false.svg" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info w-100 mx-3">
+              <h5 class="d-flex justify-content-between w-100">
+                Mohamed Akmal
+                <time>28-Aug-2022</time>
+              </h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled mt-2">
+                <!-- <li>
+                  <a href="">
+                    <img src="/assets/icons/true.svg" alt="" srcset="">
+                  </a>
+                </li> -->
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/false.svg" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="friends-list">
+            <div class="firend-img">
+              <img src="/assets/images/UserImg.png" alt="" srcset="">
+            </div>
+            <div class="friend-info w-100 mx-3">
+              <h5 class="d-flex justify-content-between w-100">
+                Mohamed Akmal
+                <time>28-Aug-2022</time>
+              </h5>
+              <h6>Emojiit - Joe</h6>
+              <ul class="list-unstyled mt-2">
+                <!-- <li>
+                  <a href="">
+                    <img src="/assets/icons/true.svg" alt="" srcset="">
+                  </a>
+                </li> -->
+                <li>
+                  <a href="">
+                    <img src="/assets/icons/false.svg" alt="" srcset="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+</section>

@@ -1,0 +1,29 @@
+<svg id="Placeholder" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99" height="99" viewBox="0 0 99 99">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Cricle" width="99" height="99" rx="49.5" fill="#fbfbfd"/>
+    </clipPath>
+  </defs>
+  <g id="_2_Elements_Graphics_Placeholder-Graphics" data-name="2 Elements/Graphics/Placeholder-Graphics">
+    <rect id="Cricle-2" data-name="Cricle" width="99" height="99" rx="49.5" fill="#fbfbfd"/>
+    <g id="_2_Elements_Graphics_Placeholder-Graphics-2" data-name="2 Elements/Graphics/Placeholder-Graphics" clip-path="url(#clip-path)">
+      <g id="Background_Color" data-name="Background Color">
+        <rect id="fundamentals_colors_primary_sensitive-grey" data-name="fundamentals/colors/primary/sensitive-grey" width="99" height="99" fill="#d8d8d8"/>
+      </g>
+      <g id="Illustration" transform="translate(24.528 31.52)">
+        <ellipse id="Oval" cx="10.116" cy="10.165" rx="10.116" ry="10.165" transform="translate(30.769)" fill="#d5d5d9" opacity="0.1"/>
+        <g id="Mountain" transform="translate(0 10.167)">
+          <g id="Fundamentals_Illustrations_Molecules_Mountain" data-name="Fundamentals/Illustrations/Molecules/Mountain">
+            <path id="Mountain-2" data-name="Mountain" d="M30.509,21.434C30.246,15.9,27.865-3.223,23.085.47S18,16.939,14.4,19.92,9.709,6.89,7.092,7.181,0,25.337,0,25.337l.112-.112s30.979.038,30.558.445C30.672,25.67,30.589,23.105,30.509,21.434Z" fill="#9e9e9e" opacity="0.2"/>
+          </g>
+        </g>
+        <g id="Clouds" transform="translate(14.602 7.2)">
+          <g id="Fundamentals_Illustrations_Molecules_Clouds" data-name="Fundamentals/Illustrations/Molecules/Clouds">
+            <path id="Shape" d="M19.764,0H4.205a.877.877,0,0,0,0,1.751H7.522a.877.877,0,0,1,0,1.751H.915a.871.871,0,0,0-.791.425.88.88,0,0,0,0,.9.871.871,0,0,0,.791.425h25.5A.875.875,0,0,0,26.428,3.5H14.416a.871.871,0,0,1-.791-.425.88.88,0,0,1,0-.9.871.871,0,0,1,.791-.425h5.349a.871.871,0,0,0,.791-.425.88.88,0,0,0,0-.9A.871.871,0,0,0,19.764,0Z" fill="#fff" opacity="0.78"/>
+            <path id="Shape-2" data-name="Shape" d="M32.738,0H15.3a.877.877,0,0,0,0,1.751h5.195a.871.871,0,0,1,.791.425.88.88,0,0,1,0,.9.871.871,0,0,1-.791.425H2.246a.871.871,0,0,0-.791.425.88.88,0,0,0,0,.9.871.871,0,0,0,.791.425H7.441a.871.871,0,0,1,.791.425.88.88,0,0,1,0,.9.871.871,0,0,1-.791.425H.83a.877.877,0,0,0,0,1.751H18.269a.875.875,0,0,0,.013-1.749h-2a.871.871,0,0,1-.791-.425.88.88,0,0,1,0-.9.871.871,0,0,1,.791-.425H31.326a.875.875,0,0,0,.013-1.749h-2a.871.871,0,0,1-.791-.425.88.88,0,0,1,0-.9.871.871,0,0,1,.791-.425h3.4a.877.877,0,0,0,0-1.751Z" transform="translate(4.271 9.044)" fill="#fff" opacity="0.73"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

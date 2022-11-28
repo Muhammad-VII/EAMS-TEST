@@ -1,0 +1,181 @@
+<section cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" (click)='focus($event)' id="Chat">
+  <header cdkDragHandle>
+    <div class="title">
+      <h5>
+        <button>
+          <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+        </button>
+        <img class="mx-2" src="assets/home/window/icons/Users.svg" width="20px" alt="" srcset="">
+        <span>Users</span>
+      </h5>
+    </div>
+    <div class="add-report-actions">
+      <button (click)="openAddDialog()" *ngIf="showAdd.getValue()">
+        <img src="assets/home/window/icons/add.png" alt="" srcset="">
+        <span>Add</span>
+      </button>
+      <button *ngIf="showReport.getValue()">
+        <img src="assets/home/window/icons/report.png" alt="" srcset="">
+        <span>Report</span>
+      </button>
+    </div>
+    <div class="modal-actions">
+      <button class="mx-2" (click)='minimize($event)' id="minimize">
+        <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="">
+      </button>
+      <button (click)="closeDialog($event)" id="maximize">
+        <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="">
+      </button>
+    </div>
+  </header>
+  <mat-dialog-content class="mat-typography p-0 m-0">
+    <div class="content">
+      <!-- <h3>Hello From {{data[0].Name}} Window</h3> -->
+      <div class="d-flex">
+        
+        <div class="filter-input">
+          <input (keyup)="applyFilter($event)" placeholder="Search…" #input>
+          <img src="assets/home/window/icons/search.png" alt="" srcset="">
+        </div>
+        <img class="ms-2" src="assets/home/window/icons/Settings.svg" alt="">
+      </div>
+      <div class="table-responsive">
+        <div class="mat-elevation-z8">
+          <table mat-table [dataSource]="dataSource" matSort>
+            <!-- Actions Column -->
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef> Actions </th>
+              <td mat-cell *matCellDef="let row" class="d-flex flex-nowrap mt-2 me-4">
+                <button class="edit-btn" mat-icon-button [matMenuTriggerFor]="menu"
+                  aria-label="More actions button">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                  <button mat-menu-item class="moreActionsMenuItem d-flex justify-content-between">
+                    <div>
+                      <mat-icon>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                          <path id="Vector"
+                            d="M15,0H5C2,0,0,1.5,0,5v7c0,3.5,2,5,5,5H15c3,0,5-1.5,5-5V5C20,1.5,18,0,15,0Zm.47,6.09-3.13,2.5a3.861,3.861,0,0,1-4.68,0L4.53,6.09a.769.769,0,0,1-.12-1.06.748.748,0,0,1,1.05-.12l3.13,2.5a2.386,2.386,0,0,0,2.81,0l3.13-2.5a.738.738,0,0,1,1.05.12A.759.759,0,0,1,15.47,6.09Z"
+                            fill="#2dbecd" />
+                        </svg>
+                      </mat-icon>
+                      <span>Email</span>
+                    </div>
+
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                        <path id="Vector"
+                          d="M5,0A5.014,5.014,0,0,0,0,5,4.814,4.814,0,0,0,.73,7.57,4.949,4.949,0,0,0,5,10,4.89,4.89,0,0,0,8.29,8.75a4.508,4.508,0,0,0,.99-1.18A4.9,4.9,0,0,0,10,5,5,5,0,0,0,5,0ZM7.59,4.46,4.92,6.92a.943.943,0,0,1-1.3-.02L2.39,5.66A.94.94,0,0,1,3.72,4.33l.59.59L6.32,3.07a.933.933,0,0,1,1.32.05A.957.957,0,0,1,7.59,4.46Z"
+                          fill="#2dbecd" />
+                      </svg>
+                    </div>
+
+                  </button>
+                  <button mat-menu-item class="moreActionsMenuItem">
+                    <mat-icon>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19.99" viewBox="0 0 20 19.99">
+                        <path id="Vector"
+                          d="M15,0H5A4.991,4.991,0,0,0,0,4.98v6.98a4.991,4.991,0,0,0,5,4.98H6.5a1.149,1.149,0,0,1,.8.4l1.5,1.99a1.421,1.421,0,0,0,2.4,0l1.5-1.99a1.014,1.014,0,0,1,.8-.4H15a4.991,4.991,0,0,0,5-4.98V4.98A4.991,4.991,0,0,0,15,0ZM6,10A1,1,0,1,1,7,9,1,1,0,0,1,6,10Zm4,0a1,1,0,1,1,1-1A1,1,0,0,1,10,10Zm4,0a1,1,0,1,1,1-1A1,1,0,0,1,14,10Z"
+                          fill="#2dbecd" />
+                      </svg>
+                    </mat-icon>
+                    <span>SMS</span>
+                  </button>
+                  <button mat-menu-item class="moreActionsMenuItem">
+                    <mat-icon>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.384" height="20" viewBox="0 0 15.384 20">
+                        <path id="Vector"
+                          d="M15.029,12.49l-1-1.66a3.715,3.715,0,0,1-.4-1.48V6.82a5.909,5.909,0,0,0-3.37-5.33A2.926,2.926,0,0,0,7.679,0a2.961,2.961,0,0,0-2.59,1.52,5.928,5.928,0,0,0-3.3,5.3V9.35a3.626,3.626,0,0,1-.4,1.47L.379,12.49a2.337,2.337,0,0,0,1.31,3.53,18.7,18.7,0,0,0,6.02.98,18.969,18.969,0,0,0,6.02-.97,2.411,2.411,0,0,0,1.3-3.54Z"
+                          fill="#2dbecd" />
+                        <path id="Vector-2" data-name="Vector"
+                          d="M5.65.01A3.014,3.014,0,0,1,2.82,2,2.965,2.965,0,0,1,.7,1.11,2.761,2.761,0,0,1,0,0C.13.02.26.03.4.05c.23.03.47.06.71.08.57.05,1.15.08,1.73.08S3.98.18,4.54.13c.21-.02.42-.03.62-.06Z"
+                          transform="translate(4.869 18)" fill="#2dbecd" />
+                      </svg>
+
+                    </mat-icon>
+                    <span>Notifications</span>
+                  </button>
+                </mat-menu>
+
+                <button class="edit-btn px-2">
+                  <img src="assets/home/window/icons/edit.png" alt="" srcset="">
+                </button>
+
+                <button class="edit-btn">
+                  <img src="assets/home/window/icons/UserVerified.svg" alt="" srcset="">
+                </button>
+
+              </td>
+            </ng-container>
+            <!-- Status Column -->
+            <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+              <td mat-cell *matCellDef="let row">
+                <img src="assets/home/window/icons/Active.png" alt="" srcset="">
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="icon">
+              <th mat-header-cell *matHeaderCellDef> Photo </th>
+              <td mat-cell *matCellDef="let row">
+                <div class="person-img">
+                  <img
+                  nz-image
+                  width="35px"
+                  nzSrc="https://cdn-icons-png.flaticon.com/512/146/146031.png"
+                  alt="profile_image"
+                />
+                  <div class="show-full-img">
+                    <img class="rounded-circle" src="https://cdn-icons-png.flaticon.com/512/146/146031.png" width="90px"
+                      alt="" srcset="">
+                  </div>
+                </div>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="firstName">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> First name </th>
+              <td mat-cell *matCellDef="let row" (click) = 'showUserDetails()'> Lorem </td>
+            </ng-container>
+
+            <ng-container matColumnDef="lastName">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Last name </th>
+              <td mat-cell *matCellDef="let row" (click) = 'showUserDetails()'> Lorem </td>
+            </ng-container>
+
+            <ng-container matColumnDef="email">
+              <div>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+                <td mat-cell *matCellDef="let row" (click) = 'showUserDetails()'> Loremipsum@dolor.com</td>
+              </div>
+            </ng-container>
+
+            <ng-container matColumnDef="phone">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone </th>
+              <td mat-cell *matCellDef="let row" (click) = 'showUserDetails()'> 01234567890 </td>
+            </ng-container>
+
+            <ng-container matColumnDef="lang">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Language </th>
+              <td mat-cell *matCellDef="let row" (click) = 'showUserDetails()'> <img src="assets/home/window/icons/Image 1.svg" alt=""> En 
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="company">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Company </th>
+              <td mat-cell *matCellDef="let row" (click) = 'showUserDetails()'> {{row.fruit}} </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            <!-- Row shown when there is no matching data. -->
+            <tr class="mat-row" *matNoDataRow>
+              <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+            </tr>
+          </table>
+          <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+</section>

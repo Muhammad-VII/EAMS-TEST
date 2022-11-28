@@ -1,0 +1,102 @@
+<section click-stop-propagation cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" id="ADDBtn" (click)="focus($event)">
+  <header cdkDragHandle>
+      <div class="title">
+          <h5>
+              <button>
+                  <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+              </button>
+              <!-- <img class="mx-2" src="assets/home/window/icons/addComponent.png" width="20px" alt="" srcset=""> -->
+              <!-- <img class="mx-2" [src]="data[0].IconPath" width="20px" alt="" srcset=""> -->
+              <!-- <span>{{data[0].Name}}</span> -->
+              <span class="mx-2">Add Button Component</span>
+          </h5>
+      </div>
+      <div class="modal-actions">
+          <button class="mx-2"  id="minimize" (click)="minimize($event)">
+              <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="" >
+          </button>
+          <button (click)="close()" id="maximize">
+              <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="" >
+          </button>
+      </div>
+  </header>
+    <mat-dialog-content class="mat-typography add-btn-section p-0 m-0">
+        <div class="content add-btn">
+        <!-- <h3>Hello From {{data[0].Name}} Window</h3> -->
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Button name</label>
+                    <div class="choose-lang d-flex align-items-center">
+                        <input type="text" class="form-control" placeholder="Add button name">
+                        <button (click)="addButton()">
+                            <img src=".../../../../../../../../../assets/home/window/icons/vuesax-bold-add.svg" alt="" srcset="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between">
+                            <div class="mr-2">
+                                <label class="form-label">Description</label>
+                                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        <div class="">
+                            <div class="icon-upload">
+                                <!-- <label for="">Photo</label> -->
+                                <div class="upload">
+                                    <img class="rounded preview" width="100px" height="100px" src="assets/home/window/icons/photo-default.png" alt="" srcset="">
+                                    <div>
+                                        <label style="cursor: pointer;" for="imageads"><img src="assets/home/window/icons/upload.png" alt="upload_image_skelton"></label>
+                                        <input (change) = 'onFileSelected($event)' type="file" id="imageads" style="display: none; visibility: none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-2 mt-2">
+                    <div class="mb-2 mt-2" *ngFor="let button of buttons; let i = index">
+                        <label class="form-label" for="">Button name</label>
+                        <div class="choose-lang d-flex align-items-center">
+                            <input type="text" class="form-control" placeholder="Add Name here">
+                            <button (click)="removeButton(i)">
+                                <img src="../../../../../../../assets/home/window/icons/001-close.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between">
+                            <div class="mr-2">
+                                <label class="form-label">Description</label>
+                                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        <div class="">
+                            <div class="icon-upload">
+                                <!-- <label for="">Photo</label> -->
+                                <div class="upload">
+                                    <img class="rounded preview" width="100px" height="100px" src="assets/home/window/icons/photo-default.png" alt="" srcset="">
+                                    <div>
+                                        <label style="cursor: pointer;" for="imageads"><img src="assets/home/window/icons/upload.png" alt="upload_image_skelton"></label>
+                                        <input (change) = 'onFileSelected($event)' type="file" id="imageads" style="display: none; visibility: none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-2 mt-4">
+                    <div class="fom-actions">
+                        <button>Cancel</button>
+                        <button>Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </mat-dialog-content>
+</section>
+
+<!-- Button trigger modal -->

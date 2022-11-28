@@ -1,0 +1,17 @@
+<svg id="Group_25453" data-name="Group 25453" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="24" height="24" fill="#d8d8d8"/>
+  <g id="Illustration" transform="translate(2.743 5.486)">
+    <ellipse id="Oval" cx="3.702" cy="3.719" rx="3.702" ry="3.719" transform="translate(11.259)" fill="#d5d5d9" opacity="0.1"/>
+    <g id="Mountain" transform="translate(0 3.72)">
+      <g id="Fundamentals_Illustrations_Molecules_Mountain" data-name="Fundamentals/Illustrations/Molecules/Mountain">
+        <path id="Mountain-2" data-name="Mountain" d="M11.164,7.843C11.068,5.819,10.2-1.18,8.447.172S6.588,6.2,5.268,7.289,3.553,2.521,2.595,2.628,0,9.271,0,9.271L.041,9.23s11.336.014,11.182.163C11.223,9.393,11.193,8.455,11.164,7.843Z" transform="translate(0 0)" fill="silver"/>
+      </g>
+    </g>
+    <g id="Clouds" transform="translate(5.343 2.635)">
+      <g id="Fundamentals_Illustrations_Molecules_Clouds" data-name="Fundamentals/Illustrations/Molecules/Clouds" transform="translate(0)">
+        <path id="Shape" d="M7.232,0H1.539a.321.321,0,0,0,0,.641H2.753a.321.321,0,0,1,0,.641H.335a.319.319,0,0,0-.29.155.322.322,0,0,0,0,.33.319.319,0,0,0,.29.155H9.666a.32.32,0,0,0,0-.64h-4.4a.319.319,0,0,1-.29-.155.322.322,0,0,1,0-.33.319.319,0,0,1,.29-.155H7.232a.319.319,0,0,0,.29-.155.322.322,0,0,0,0-.33A.319.319,0,0,0,7.232,0Z" fill="#fff" opacity="0.78"/>
+        <path id="Shape-2" data-name="Shape" d="M11.98,0H5.6a.321.321,0,0,0,0,.641H7.5A.319.319,0,0,1,7.789.8a.322.322,0,0,1,0,.33.319.319,0,0,1-.29.155H.822a.319.319,0,0,0-.29.155.322.322,0,0,0,0,.33.319.319,0,0,0,.29.155h1.9a.319.319,0,0,1,.29.155.322.322,0,0,1,0,.33.319.319,0,0,1-.29.155H.3A.321.321,0,0,0,.3,3.2H6.685a.32.32,0,0,0,0-.64h-.73a.319.319,0,0,1-.29-.155.322.322,0,0,1,0-.33.319.319,0,0,1,.29-.155h5.5a.32.32,0,0,0,0-.64h-.733a.319.319,0,0,1-.29-.155.322.322,0,0,1,0-.33.319.319,0,0,1,.29-.155h1.244a.321.321,0,0,0,0-.641Z" transform="translate(1.563 3.31)" fill="#fff" opacity="0.73"/>
+      </g>
+    </g>
+  </g>
+</svg>

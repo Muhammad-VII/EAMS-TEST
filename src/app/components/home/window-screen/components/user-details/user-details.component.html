@@ -1,0 +1,106 @@
+<section click-stop-propagation cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" (click)='focus($event)' id="Banks">
+  <header cdkDragHandle class="w-100 d-flex justify-content-end">
+    <img src="assets/home/window/icons/close-blue.svg" width="28px" alt="" srcset=""
+      style="cursor: pointer;" (click)="closeDialog()">
+  </header>
+  <mat-dialog-content class="mat-typography p-0 m-0">
+    <div class="content">
+      <div style="width: 85%; margin: auto;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="">
+              <div class="d-flex align-items-center">
+                <div class="me-3">
+                  <img src="assets/home/window/icons/UserImg.svg" alt="" width="99px" height="99px">
+                </div>
+                <div>
+                  <div class="user-data-container">
+                    <label for="firstName">First name: </label>
+                    <p id="firstName">Lorem ipsum</p>
+                  </div>
+
+                  <div class="user-data-container">
+                    <label for="lang">Language: </label>
+                    <p id="lang">EN</p>
+                  </div>
+
+                  <div class="user-data-container">
+                    <label for="company">Company: </label>
+                    <p id="company">Lorem ipsum</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class=" user-data-container">
+                  <label for="idNumber">ID Number: </label>
+                  <p id="idNumber">123456789012</p>
+                </div>
+
+                <div class="user-data-container">
+                  <label for="email">Email: </label>
+                  <p id="status">name@domain.com</p>
+                </div>
+
+                <div class="user-data-container">
+                  <label for="notifications">Receive Notifications: </label>
+                  <p id="notifications">True</p>
+                </div>
+
+                <div class="user-data-container">
+                  <label for="createdIn">Created In: </label>
+                  <p id="createdIn">13 May 2020 13:10:05</p>
+                </div>
+
+                <div class="user-data-container">
+                  <label for="updatedIn">Updated In: </label>
+                  <p id="updatedIn">17 May 2020 15:04:03</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class=" user-data-container">
+              <label for="lastName">Last name: </label>
+              <p id="lastName">Lorem ipsum</p>
+            </div>
+
+            <div class="user-data-container">
+              <label for="status">Status: </label>
+              <p id="status">Active</p>
+            </div>
+
+            <div class="user-data-container">
+              <label for="gender">Gender: </label>
+              <p id="gender">Male</p>
+            </div>
+
+            <div class=" user-data-container">
+              <label for="phoneNumber">Phone: </label>
+              <p id="phoneNumber">01034569874</p>
+            </div>
+
+            <div class="user-data-container">
+              <label for="dot">Date of birth: </label>
+              <p id="dot">13 May 2020</p>
+            </div>
+
+            <div class="user-data-container">
+              <label for="receiveEmail">Receive Email </label>
+              <p id="receiveEmail">True</p>
+            </div>
+
+            <div class="user-data-container">
+              <label for="createdBy">Created by </label>
+              <p id="createdBy">Lorem ipsum</p>
+            </div>
+
+            <div class="user-data-container">
+              <label for="updatedBy">Updated by: </label>
+              <p id="updatedBy">Lorem ipsum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+</section>

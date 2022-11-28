@@ -1,0 +1,26 @@
+<section cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" (click) = "focus($event)" id="Fleet">
+    <header cdkDragHandle>
+        <div class="title">
+            <h5>
+                <button>
+                    <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+                </button>
+                <img class="mx-2" [src]="data[0].IconPath" width="20px" alt="" srcset="">
+                <span>{{data[0].Name}}</span>
+            </h5>
+        </div>
+        <div class="modal-actions">
+            <button class="mx-2" (click) = 'minimize($event)' id="minimize">
+                <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="" >
+            </button>
+            <button (click) = "closeDialog($event)" id="maximize">
+                <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="" >
+            </button>
+        </div>
+    </header>
+    <mat-dialog-content class="mat-typography p-0 m-0">
+        <div class="content p-2">
+            <h3>Hello From {{data[0].Name}} Window</h3>
+        </div>
+    </mat-dialog-content>
+</section>

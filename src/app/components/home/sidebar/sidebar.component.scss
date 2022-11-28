@@ -1,0 +1,30 @@
+.position-absolute {
+  z-index: 99;
+}
+.mat-drawer-container {
+  position: fixed;
+  left: 0%;
+}
+
+#toggleSideNav {
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+
+
+.offcanvas {
+  background-color: #e8e8e8;
+  #closeBtn {
+    position: absolute;
+    left: -6%;
+    top: 20px;
+    transform: rotateX(360deg) rotateY(180deg);;
+  }
+}
+
+.sidemenu-icon {
+  width: 30px;
+}

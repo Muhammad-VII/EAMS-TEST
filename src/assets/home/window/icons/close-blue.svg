@@ -1,0 +1,4 @@
+<svg id="add-circle-blue" xmlns="http://www.w3.org/2000/svg" width="28.284" height="28.284" viewBox="0 0 28.284 28.284">
+  <path id="Vector" d="M10,0A10,10,0,1,0,20,10,10.016,10.016,0,0,0,10,0Zm4,10.75H10.75V14a.75.75,0,0,1-1.5,0V10.75H6a.75.75,0,0,1,0-1.5H9.25V6a.75.75,0,0,1,1.5,0V9.25H14a.75.75,0,0,1,0,1.5Z" transform="translate(14.142) rotate(45)" fill="#2dbecd"/>
+  <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(26.142 26.142) rotate(180)" fill="none" opacity="0"/>
+</svg>

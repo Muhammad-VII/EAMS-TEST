@@ -1,0 +1,274 @@
+
+<section cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" id="ADD" (click)="focus($event)">
+    <header cdkDragHandle>
+        <div class="title">
+            <h5>
+                <button>
+                    <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+                </button>
+                <img class="mx-2" src="assets/home/window/icons/UsersID.svg" width="20px" alt="" srcset="">
+                <span>Add Identity</span>
+            </h5>
+        </div>
+        <div class="modal-actions">
+            <button class="mx-2" id="minimize" (click)="minimize($event)">
+                <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="">
+            </button>
+            <button (click)="close()" id="maximize">
+                <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="">
+            </button>
+        </div>
+    </header>
+    <mat-dialog-content class="mat-typography p-0 m-0">
+        <div class="content">
+            <form>
+                <div class="mb-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <div>
+                                <label class="form-label m-0">Doc Type</label>
+                                <div>
+                                    <select class="form-select" aria-label="docType">
+                                        <option selected>Select the doc type</option>
+                                        <option value="1">model One</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <label class="form-label m-0">Id</label>
+                                <div>
+                                    <input type="text" class="form-control" placeholder="Add the user ID">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">User mail</label>
+                    <input type="text" class="form-control" placeholder="Add you email">
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" placeholder="Add First name here">
+                        </div>
+                        <div>
+                            <label class="form-label">Apartment</label>
+                            <input type="text" class="form-control" placeholder="Add apartment">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Last name</label>
+                            <input type="text" class="form-control" placeholder="Add last name here">
+                        </div>
+                        <div>
+                            <label class="form-label">Bulding</label>
+                            <input type="text" class="form-control" placeholder="Select bulding name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Street</label>
+                    <input type="text" class="form-control" placeholder="Add apartment name">
+                </div>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <div>
+                            <label>Country</label>
+                            <div class="d-flex">
+                                <select class="form-select" aria-label="docType">
+                                    <option selected>Select country</option>
+                                    <option value="1">Egypt</option>
+                                </select>
+                                <img class="ms-2 pointer-mouse" src="assets/home/window/icons/vuesax-bold-add.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label>City</label>
+                            <div class="d-flex">
+                                <select class="form-select" aria-label="docType">
+                                    <option selected>Select city</option>
+                                    <option value="1">Cairo</option>
+                                </select>
+                                <img class="ms-2 pointer-mouse" src="assets/home/window/icons/vuesax-bold-add.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div>
+                            <label>States</label>
+                            <div class="d-flex">
+                                <select class="form-select" aria-label="docType">
+                                    <option selected>Select Status</option>
+                                    <option value="1">Lorem</option>
+                                </select>
+                                <img class="ms-2 pointer-mouse" src="assets/home/window/icons/vuesax-bold-add.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label>Civil Registry</label>
+                            <div class="d-flex">
+                                <select class="form-select" aria-label="docType">
+                                    <option selected>Select Civil Registry</option>
+                                    <option value="1">lorem</option>
+                                </select>
+                                <img class="ms-2 pointer-mouse" src="assets/home/window/icons/vuesax-bold-add.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-2">
+                        <div class="fom-actions">
+                            <button (click)="close()">Cancel</button>
+                            <button>Next</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </mat-dialog-content>
+</section>
+
+
+ <!--! Screen 2 in add screen-->
+<!-- <section cdkDrag cdkDragBoundary=".home-page" class="model foucedDialog" id="ADD" (click)="focus($event)">
+    <header cdkDragHandle>
+        <div class="title">
+            <h5>
+                <button>
+                    <img src="assets/home/window/icons/information.svg" width="20px" alt="" srcset="">
+                </button>
+                <img class="mx-2" src="assets/home/window/icons/UsersID.svg" width="20px" alt="" srcset="">
+                <span>Add Identity</span>
+            </h5>
+        </div>
+        <div class="modal-actions">
+            <button class="mx-2" id="minimize" (click)="minimize($event)">
+                <img src="assets/home/window/icons/minimise.svg" width="20px" alt="" srcset="">
+            </button>
+            <button (click)="close()" id="maximize">
+                <img src="assets/home/window/icons/close.svg" width="20px" alt="" srcset="">
+            </button>
+        </div>
+    </header>
+    <mat-dialog-content class="mat-typography p-0 m-0">
+        <div class="content">
+            <form>
+                <div class="mb-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <div>
+                                <label class="form-label m-0">Expiration Date</label>
+                                <div>
+                                    <input type="date" class="form-control" placeholder="15 May 2022" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <label class="form-label m-0">Date of issue</label>
+                                <div>
+                                    <input type="date" class="form-control" placeholder="15 May 2022" >
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Date of birth</label>
+                            <input type="date" class="form-control" placeholder="15 May 2022" >
+                        </div>
+                        <div>
+                            <label class="form-label">Gender</label>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>Select user gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Workplace</label>
+                            <input type="text" class="form-control" placeholder="Add Workplace">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Jop</label>
+                            <div class="d-flex align-items-center">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select Jop</option>
+                                </select>
+                                <img class="ms-2 pointer-mouse" src="assets/home/window/icons/vuesax-bold-add.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="form-label">Religion</label>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>Select user religion</option>
+                                <option value="1">Muslim</option>
+                                <option value="2">Chistian</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Relationship</label>
+                            <select class="form-select mb-2" aria-label="Default select example">
+                                <option selected>Select relationship</option>
+                                <option value="1">Married</option>
+                                <option value="2">Single</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Notes</label>
+                    <input type="text" class="form-control" placeholder="Add notes here">
+                </div>
+                <div class="mb-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <label>Front ID Preview</label>
+                            <img src="../../../../../../../assets/home/window/icons/idPreviwe.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <label>Back ID Preview</label>
+                            <img class="img-fluid" src="../../../../../../../assets/home/window/icons/idPreviwe.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex justify-content-between">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Verified</label>
+                                <nz-switch [(ngModel)]="switchValue"></nz-switch>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                                <div class="fom-actions d-flex">
+                                    <button (click)="close()">Cancel</button>
+                                    <button>Next</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </mat-dialog-content>
+</section> -->

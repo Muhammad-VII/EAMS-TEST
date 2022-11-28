@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="cloud-computing" transform="translate(0 -0.277)">
+    <path id="Path_1962" data-name="Path 1962" d="M325.688,288.963h-3.955a.733.733,0,0,1-.732-.733V283.9a.732.732,0,1,1,1.465,0v3.6h3.223a.733.733,0,0,1,0,1.466Z" transform="translate(-305.326 -269.063)" fill="#374c5a"/>
+    <path id="Path_1963" data-name="Path 1963" d="M404.686,331.723a2.688,2.688,0,1,0,2.686,2.688A2.69,2.69,0,0,0,404.686,331.723Z" transform="translate(-382.371 -315.245)" fill="#72a3fc"/>
+    <path id="Path_1964" data-name="Path 1964" d="M241.732,290.43A.733.733,0,0,1,241,289.7v-5.8a.732.732,0,1,1,1.465,0v5.8A.733.733,0,0,1,241.732,290.43Z" transform="translate(-229.232 -269.063)" fill="#374c5a"/>
+    <path id="Path_1965" data-name="Path 1965" d="M256,283.168v7.262a.733.733,0,0,0,.732-.733v-5.8A.733.733,0,0,0,256,283.168Z" transform="translate(-243.5 -269.063)" fill="#374c5a"/>
+    <path id="Path_1966" data-name="Path 1966" d="M84.687,288.963H80.732a.733.733,0,0,1,0-1.466h3.223v-3.6a.732.732,0,1,1,1.465,0v4.329A.733.733,0,0,1,84.687,288.963Z" transform="translate(-76.094 -269.063)" fill="#374c5a"/>
+    <path id="Path_1967" data-name="Path 1967" d="M21.3,5.356A5.962,5.962,0,0,0,15.526.84a5.892,5.892,0,0,0-2.985.8A5.215,5.215,0,0,0,3.814,5.323a5.221,5.221,0,0,0,1.4,10.248H19.786A5.221,5.221,0,0,0,21.3,5.356Z" transform="translate(0 0)" fill="#bebbbb"/>
+    <path id="Path_1968" data-name="Path 1968" d="M264.8,16.311a5.962,5.962,0,0,0-5.774-4.516,5.892,5.892,0,0,0-2.985.8L256,12.558V26.526h7.286A5.221,5.221,0,0,0,264.8,16.311Z" transform="translate(-243.501 -10.955)" fill="#bebbbb"/>
+    <g id="Group_806" data-name="Group 806" transform="translate(0 16.478)">
+      <path id="Path_1969" data-name="Path 1969" d="M203.686,401.723a2.688,2.688,0,1,0,2.686,2.688A2.69,2.69,0,0,0,203.686,401.723Z" transform="translate(-191.186 -398.301)" fill="#72a3fc"/>
+      <path id="Path_1970" data-name="Path 1970" d="M2.686,331.723a2.688,2.688,0,1,0,2.686,2.688A2.69,2.69,0,0,0,2.686,331.723Z" transform="translate(0 -331.723)" fill="#72a3fc"/>
+    </g>
+    <path id="Path_1971" data-name="Path 1971" d="M256,401.723V407.1a2.688,2.688,0,0,0,0-5.377Z" transform="translate(-243.5 -381.823)" fill="#72a3fc"/>
+  </g>
+</svg>

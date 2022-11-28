@@ -1,0 +1,185 @@
+.model {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  max-width: 1033px;
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+overflow: hidden;
+  transition:
+  top .5s 0s cubic-bezier(.1, 1.2, .3, 1),
+  transform .5s 0s cubic-bezier(.1, 1.2, .3, 1),
+  width .5s .5s cubic-bezier(.1, 1.2, .3, 1),
+  opacity .3s;
+  border-radius: 8px;
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f4f4f4;
+      box-shadow: 0px 0px 6px #00000029;
+      padding: 5px 10px;
+      cursor: move;
+      h5 {
+          button {
+              all: unset;
+              cursor: pointer;
+          }
+          margin: 0;
+          font-size: 20px;
+          font-family: 'arial-regular';
+      }
+      .add-report-actions {
+          display: flex;
+          align-items: center;
+          button {
+              all: unset;
+              cursor: pointer;
+              margin: 0 7px;
+              font-size: 16px;
+              color: #4D4F5C;
+              display: flex;
+              align-items: center;
+              img {
+                  width: 18px;
+              }
+              span {
+                  margin: 0 3px;
+              }
+          }
+      }
+      .modal-actions {
+          button {
+              all: unset;
+              cursor: pointer;
+          }
+      }
+  }
+  .content {
+      padding: 20px;
+      .filter-input {
+          position: relative;
+          input {
+              background-color: #f0f0f0;
+              outline: none;
+              border: none;
+              min-width: 250px;
+              min-height: 37px;
+              border-radius: 4px;
+              padding: 0 10px 0 30px;
+          }
+          img {
+              position: absolute;
+              top: 9px;
+              left: 7px;
+          }
+      }
+      .table-responsive {
+          .mat-table {
+              width: 100%;
+              margin-top: 15px;
+              background: #ffffff;
+              th {
+                  color: #1B1B25;
+                  font-size: 14px;
+              }
+              td {
+                  color: #888686;
+                  mat-icon {
+                      color: #2DBECD;
+                  }
+                  .edit-btn {
+                      all: unset;
+                      cursor: pointer;
+                  }
+                  .person-img {
+                      position: relative;
+                      cursor: pointer;
+                      &:hover {
+                          .show-full-img {
+                              opacity: 1;
+                          }
+                      }
+                      .show-full-img {
+                          position: absolute;
+                          top: 0px;
+                          left: 33px;
+                          transition: all .3s;
+                          opacity: 0;
+                      }
+                  }
+              }
+          }
+      }
+  }
+}
+
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+  padding-left: 0;
+}
+
+::ng-deep .mat-dialog-container {
+  background-color: transparent;
+  padding: 0 !important;
+  color: #000;
+}
+::ng-deep .mat-dialog-content {
+  max-height: 665px;
+}
+
+// Table Style 
+::ng-deep .mat-elevation-z8 {
+  box-shadow: none;
+}
+::ng-deep thead {
+  background: #f8f8fc !important;
+}
+tr.mat-row, tr.mat-footer-row {
+  transition: all .3s;
+  &:hover {
+      background: #f8f8fc !important;
+  }
+}
+::ng-deep .mat-paginator-outer-container {
+  background-color: #fff;
+}
+.mat-paginator, 
+.mat-paginator-page-size 
+.mat-select-trigger {
+  color: #0000008a;
+}
+::ng-deep .mat-select-value {
+  color: #0000008a;
+}
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: #0000006b;
+}
+::ng-deep .mat-select-arrow {
+  color: #0000008a;
+}
+::ng-deep .mat-icon-button.mat-button-disabled.mat-button-disabled {
+  color: #00000042;
+}
+::ng-deep th.mat-header-cell:first-of-type {
+  width: 80px;
+}
+::ng-deep th.mat-header-cell:nth-of-type(2),
+::ng-deep th.mat-header-cell:nth-of-type(3) {
+  width: 50px;
+}
+
+.moreActionsMenuItem{
+  transition: background-color .3s;
+}
+
+.moreActionsMenuItem:hover {
+  background-color: #E9E9ED;
+}
+// Table Style 
+
+::ng-deep .mat-menu-panel {
+  border-radius: 6px !important;
+}

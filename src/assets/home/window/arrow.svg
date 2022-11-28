@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Group_854" data-name="Group 854" transform="translate(-79 -534)">
+    <circle id="Ellipse_53" data-name="Ellipse 53" cx="11" cy="11" r="11" transform="translate(79 534)" fill="#269dd4"/>
+    <path id="Arrow_Back" d="M.459,9.587H13.224l-3.819-3.8a.459.459,0,1,1,.649-.649L14.6,9.675a.463.463,0,0,1,0,.649l-4.541,4.541a.459.459,0,0,1-.649-.649L13.224,10.5H.459a.459.459,0,0,1,0-.917Z" transform="translate(83 535)" fill="#fff"/>
+  </g>
+</svg>

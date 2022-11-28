@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="713" height="418" viewBox="0 0 713 418">
+  <g id="Group_25429" data-name="Group 25429" transform="translate(0.001 0)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="713" height="418" transform="translate(-0.001 0)" fill="#f8f8fc"/>
+    <g id="Illustration" transform="translate(293.503 135.432)">
+      <ellipse id="Oval" cx="41.909" cy="42.112" rx="41.909" ry="42.112" transform="translate(127.474)" fill="#d5d5d9" opacity="0.1"/>
+      <g id="Mountain" transform="translate(0 42.123)">
+        <g id="Fundamentals_Illustrations_Molecules_Mountain" data-name="Fundamentals/Illustrations/Molecules/Mountain">
+          <path id="Mountain-2" data-name="Mountain" d="M126.4,88.8C125.308,65.886,115.442-13.355,95.64,1.946s-21.051,68.231-36,80.583S40.224,28.547,29.38,29.749,0,104.972,0,104.972l.463-.465s128.347.158,126.6,1.842C127.072,106.349,126.732,95.725,126.4,88.8Z" transform="translate(0 0)" fill="#9e9e9e" opacity="0.2"/>
+        </g>
+      </g>
+      <g id="Clouds" transform="translate(60.495 29.829)">
+        <g id="Fundamentals_Illustrations_Molecules_Clouds" data-name="Fundamentals/Illustrations/Molecules/Clouds">
+          <path id="Shape" d="M81.883,0H17.421a3.633,3.633,0,0,0,0,7.256H31.164a3.633,3.633,0,0,1,0,7.256H3.792a3.61,3.61,0,0,0-3.278,1.76,3.647,3.647,0,0,0,0,3.735,3.61,3.61,0,0,0,3.278,1.76H109.438a3.624,3.624,0,0,0,.052-7.247H59.724a3.61,3.61,0,0,1-3.278-1.76,3.647,3.647,0,0,1,0-3.735,3.61,3.61,0,0,1,3.278-1.76H81.883A3.61,3.61,0,0,0,85.161,5.5a3.647,3.647,0,0,0,0-3.735A3.61,3.61,0,0,0,81.883.009Z" fill="#fff" opacity="0.78"/>
+          <path id="Shape-2" data-name="Shape" d="M135.634,0H63.385a3.633,3.633,0,0,0,0,7.256H84.907a3.61,3.61,0,0,1,3.278,1.76,3.647,3.647,0,0,1,0,3.735,3.61,3.61,0,0,1-3.278,1.76H9.3a3.61,3.61,0,0,0-3.278,1.76,3.647,3.647,0,0,0,0,3.735A3.61,3.61,0,0,0,9.3,21.767H30.826a3.61,3.61,0,0,1,3.278,1.76,3.647,3.647,0,0,1,0,3.735,3.61,3.61,0,0,1-3.278,1.76H3.437a3.633,3.633,0,0,0,0,7.256h72.25a3.624,3.624,0,0,0,.052-7.247H67.471a3.61,3.61,0,0,1-3.278-1.76,3.647,3.647,0,0,1,0-3.735,3.61,3.61,0,0,1,3.278-1.76h62.314a3.624,3.624,0,0,0,.052-7.247h-8.295a3.61,3.61,0,0,1-3.278-1.76,3.647,3.647,0,0,1,0-3.735,3.61,3.61,0,0,1,3.278-1.76h14.083a3.633,3.633,0,0,0,0-7.256Z" transform="translate(17.695 37.471)" fill="#fff" opacity="0.73"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
